@@ -10,6 +10,12 @@
 
 *,::before,::after{ margin: 0; padding: 0; box-sizing: border-box;}
 
+h1,h2,h3,h4,h5,h6{ font-family: Poppins; }
+
+p{ font-size: 17px; }
+
+a{ font-family: Poppins; font-size: 14px; font-weight: 600; letter-spacing: 1px;}
+
 body{
 	box-sizing: border-box;
 	margin: 0;
@@ -19,7 +25,7 @@ body{
 .container{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: minmax(700px, max-content) max-content max-content;
+	grid-template-rows: minmax(70vh, max-content) max-content max-content;
 }
 
 /* ________________________ Header Section Starts Here _________________________ */
@@ -29,7 +35,7 @@ header{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: linear-gradient(var(--black), var(--black)), url("bc1.jpg");
+	background-image: linear-gradient(var(--black), var(--black)), url("../images/bc1.jpg");
 	background-blend-mode: multiply;
 	background-size: cover;
 	background-position: center;
@@ -58,7 +64,6 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-inline: 80px;
 }
 
 
@@ -88,7 +93,6 @@ header{
 	text-decoration: none;
 	text-align: center; 
 	color: var(--white); 
-	font-size: 15px; 
 	transition: color 0.2s ease-in;
 }
 
@@ -109,7 +113,9 @@ header{
 
 .hero--txt>a{
 	display: block;
-	padding: 8px 30px;
+	width: 180px;
+	height: 40px;
+	padding: 8px 0;
 	margin-top: 20px;
 	color: var(--white);
 	background-color: var(--red);
@@ -126,7 +132,7 @@ header{
 .hero--txt>a:active{ transform: scale(0.97); }
 
 
-.social--icons{ display: flex; justify-content: center; margin-top: 20px; }
+.social--icons{ display: flex; align-items: center; justify-content: center; margin-top: 20px; }
 
 .social--icons img{ width: 30px; height: 30px; margin-inline: 10px; transition: transform 0.2s ease-in;}
 
@@ -137,13 +143,28 @@ header{
 
 /* __________________________  Content Section Starts Here _______________________  */
 
-section{
+.content--sec{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
+.content--sec h2{ color: var(--red); position: relative; margin-block-end: 25px }
+
+.content--sec h2::before{
+	position: absolute;
+	width: max-content;
+	height: 100%;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	font-family: Poppins;
+	font-size: 12px;
+	font-weight: lighter;
+	color: rgba(0, 0, 0, 0.7);
+
+}
 /* ________________________ About Section Starts Here _________________________ */
 
 .about--sec{
@@ -183,17 +204,9 @@ section{
 	margin-left: 60px;
 }
 
-.about--txt>h2{ width: 100%; text-align: left; color: var(--red); position: relative; margin-block-end: 20px; } 
+.about--txt>h2{ align-self: flex-start; } 
 
-.about--txt>h2::before{
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 10%;
-	height: 2px;
-	background: var(--black);
-}
+.about--txt>h2::before{ content: "Who I am?"; }
 
 .about--txt>p{ width: 100%; text-align: justify; color: var(--black);}
 
@@ -243,26 +256,309 @@ section{
 
 .skills--sec{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	padding: 60px 100px;
 	width: 100%;
 	height: max-content;
-	background: rgba(0, 0, 0, 0.1);
+	background: #ffdce1;
 }
 
-.skills--sec>h2{
-	 width: 100%; text-align: center; color: var(--red); position: relative; margin-block-end: 20px;
+.skills--sec>hr{
+	width: 2px;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.2);
+	transform: rotateY(90deg);
 }
 
-.skills--sec>h2::before{
+.skills--txt,.skills--bars{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 50%;
+}
+
+.skills--txt>h2{ align-self: flex-start; }
+
+.skills--txt>h2::before{ content: "What I Know?";}
+
+.bar--fields{ margin-block: 15px;}
+
+.bar--txt{ display: flex;  justify-content: space-between;}
+
+.bar--txt>h4{ font-weight: 600; }
+
+.bars{
+	width: 350px;
+	height: 5px;
+	background: var(--black);
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.bars::before{
 	content: "";
 	position: absolute;
-	left: 50%;
+	height: 100%;
+	background: var(--red);
+}
+
+.bar1::before{ width: 85%; }
+.bar2::before{ width: 75%; }
+.bar3::before{ width: 55%; }
+
+/* _________________________ Services Section Starts Here ________________________ */
+
+.services--sec{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 100px;
+
+}
+
+.services--sec>h2::before{ content: "What I Do?"; left: 50%; transform: translateX(-50%);}
+
+.card--sec{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.cards{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 330px;
+	height: 300px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	margin-inline: 10px;
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.2s linear;
+}
+
+.cards:hover{
+	border: 2px var(--red) solid;
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+	transform: scale(1.04);
+}
+
+.cards>img{ width: 70px; height: 70px; }
+
+.cards>h3{ font-size: 16px; margin: 15px 0 5px 0;}
+
+.cards>h3,p{ color: var(--black); }
+
+.cards>p{ text-align: center;}
+
+/* ________________________ Testimnial SEction Starts Here ___________________________ */
+
+.test--sec{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 535px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.test--sec>h2{ position: absolute; top: 60px; }
+
+.test--sec>h2::before{ content: "What People Says?"; left: 50%; transform: translateX(-50%); }
+
+.test--container{
+	position: absolute;
+	bottom: 60px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	padding-block: 5px;
+	width: 100%;
+	height: 350px;
+	overflow-x: auto;
+}
+
+.test--cards{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px 30px;
+	margin: 0 40px;
+	width: 500px;
+	height: 300px;
+	color: var(--black);		
+	background-image: linear-gradient(to bottom, #fff, var(--white));
+	border-bottom: 3px transparent solid; 
+	border-radius: 5px;
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.2s linear;
+}
+
+.test--cards:hover{
+	border-bottom-color: var(--red); transform: scale(1.01); }
+
+.test--cards>img{ width: 80px; height: 80px; margin-block-end: 5px; }
+
+.test--cards>h3{ font-size: 16px; margin: 15px 0 5px 0; position: relative;}
+
+.test--cards>p{ width: 400px; margin-top: 15px;}
+
+.test--cards>h3::before{
+	content: "Web Designer";
+	position: absolute;
+	width: max-content;
+	height: 100%;
+	height: 5px;
 	bottom: 0;
-	width: 4.5%;
-	height: 2px;
-	transform: translateX(-50%);
-	background: var(--black);
+	left: 0;
+	font-family: Poppins;
+	font-size: 12px;
+	font-weight: lighter;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+/* _____________________ Work Section Starts Here ____________________  */
+
+.work--sec{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding: 60px 100px ;
+	background: #ffdce1;
+
+}
+
+.work--sec>h2::before{ content: "What I Done?";  left: 50%; transform: translateX(-50%); }
+
+.work--cards--container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.work--cards{
+	background-image: url("../images/project1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 300px;
+	margin: 30px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.work--cards>h3{ color: var(--black); padding: 10px 0 10px 20px; width: 100%; background: var(--white);
+ position: absolute; bottom: 0; }
+
+.work--cards>h3>span{
+	display: block;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.hov--cards{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #faf5e6e3;
+	display: none;
+}
+
+.hov--cards>a{
+	display: block;
+	width: 150px;
+	height: 45px;
+	padding: 12px;
+	text-align: center;
+	margin: 35% auto;
+	background: var(--red);
+	color: var(--white);
+	text-decoration: none;
+	border-radius: 50px	;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+	transition: transform 0.05s linear , box-shadow 0.1s linear;
+}
+
+.hov--cards>a:hover{ box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4); transform: translate(1px, -1px); }
+
+.hov--cards>a:active{
+	transform: scale(0.96);
+	box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+}
+
+.work--cards:hover .hov--cards{ display: block; }
+
+/* ______________________ Contact Section Starts Here ______________________ */
+
+.contact--sec{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 100px;
+	width: 100%;
+	height: max-content;
+	color: var(--black);
+	background: #ffdce1;
+
+}
+
+.contact--left, .contact--right{ 
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-basis: 50%;
+}
+
+.contact--right{
+	align-items: flex-start;
+	padding-left: 200px;
+}	
+
+.contact--left>h2::before{ content: "How To Contact?"; }
+
+.right--top{ margin-bottom: 30px; }
+
+.social{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+	margin: 10px 0;
+	flex-basis: 50%;
+}
+
+.social>a>img{ width: 20px; height: 20px; margin: 0 5px; }
+
+/* _____________________ Footer Section Starts Here ________________________ */
+
+footer{
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+	padding: 20px 40px;
+	width: 100%;
+	height: 100px;
+}
+
+footer>.nav li>a{
+	color: var(--black);
 }

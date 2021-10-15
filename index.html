@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<title>Portfolio</title>
 </head>
 <body>
@@ -11,15 +11,15 @@
 	<!-- ___________________________ Header Section Starts Here ______________________________ -->
 	<header>
 		<div class="nav--sec">
-			<a href="#"><img src="close.svg" alt=""></a>
+			<a href="#"><img src="../icons/close.svg" alt=""></a>
 			<div class="nav">
-				<img src="logo.svg" class="logo" alt="Logo">
+				<img src="../icons/logo.svg" class="logo" alt="Logo">
 				<ul class="nav--list">
 					<li><a href="#">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#services">Services</a></li>
-					<li><a href="#">Work</a></li>
+					<li><a href="#work">Work</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
@@ -31,10 +31,10 @@
 			<pre class="hero--p hero--p2">________   Web Designer & Graphic Designer   ________</pre>
 			<a href="#">Hire me</a>
 			<div class="social--icons">
-				<a href="#"><img src="facebook.svg" alt=""></a>
-				<a href="#"><img src="twitter.svg" alt=""></a>
-				<a href="#"><img src="gmail.svg" alt=""></a>
-				<a href="#"><img src="dribbble.svg" alt=""></a>
+				<a href="#"><img src="../icons/facebook.svg" alt=""></a>
+				<a href="#"><img src="../icons/twitter.svg" alt=""></a>
+				<a href="#"><img src="../icons/gmail.svg" alt=""></a>
+				<a href="#"><img src="../icons/dribbble.svg" alt=""></a>
 			</div>
 		</div>
 
@@ -45,11 +45,11 @@
 		<!-- __________________ About Section Starts Here ______________________ -->
 		<div class="about--sec" id="about">
 			<div class="img--sec">
-				<img src="myPic.png" alt="">
+				<img src="../images/myPic.png" alt="">
 			</div>
 			<div class="about--txt">
 				<h2>About me</h2>
-				<p>Assalam-o-aliakum! My name is Hammad Hassan. I am a Pakistani and I'm a passoniate freelance Web Designer and Graphics Designer. I have 1year of experience. I love to create Websites and Graphics for my clients.</p>
+				<p>Assalamualaikum! My name is Hammad Hassan. I am a Pakistani and I'm a passoniate freelance Web Designer and Graphics Designer. I have 1year of experience. I love to create Websites and Graphics for my clients.</p>
 				<hr>
 				<div class="info">
 					<label>Name</label>
@@ -67,30 +67,213 @@
 
 		<!-- __________________ Skills Section Starts Here ______________________ -->
 		<div class="skills--sec" id="skills">
-			<h2>My Skills</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ut, earum maiores repudiandae corporis minima accusantium delectus reiciendis optio minus?</p>
-			<div class="skills">
-				<div class="bars">
-					<label>HTML</label>
-				
+			<div class="skills--txt">
+				<h2>My Skills</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ut, earum maiores repudiandae corporis minima accusantium delectus reiciendis optio minus.</p>
+			</div>
+			<hr>
+			<div class="skills--bars">
+				<div class="bar--fields bar--field1">
+					<div class="bar--txt">
+						<h4>HTML5</h4>
+						<p>85%</p>
+					</div>
+					<div class="bars bar1"></div>
 				</div>
-				<div class="bars bar2"></div>
-				<div class="bars bar3"></div>
+				<div class="bar--fields bar--field2">
+					<div class="bar--txt">
+						<h4>CSS3</h4>
+						<p>75%</p>
+					</div>
+					<div class="bars bar2"></div>
+				</div>
+				<div class="bar--fields bar--field3">
+					<div class="bar--txt">
+						<h4>JavaScript</h4>
+						<p>55%</p>
+					</div>
+					<div class="bars bar3"></div>
+				</div>
 			</div>
 		</div>
 
 		<!-- __________________ Services Section Starts Here ______________________ -->
-		<div class="services--sec" id="services"></div>
+		<div class="services--sec" id="services">
+			<h2>My Services</h2>
+			<div class="card--sec">
+				<div class="cards card1">
+					<img src="../icons/code-design.svg" alt="Icon">
+					<h3>Web Designing</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, rem, officiis. Ipsa iure, hic culpa.</p>
+				</div>
+
+				<div class="cards card2">
+					<img src="../icons/illustration-tool.svg" alt="Icon">
+					<h3>Graphics Designing</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nesciunt, nobis culpa eveniet vel in.</p>
+				</div>
+
+				<div class="cards card3">
+					<img src="../icons/digital-marketing.svg" alt="Icon">
+					<h3>Digital Marketing</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ipsam, perferendis excepturi? Iste est, quidem?</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- _______________________ Works Section Starts Here ________________________ -->
+		<div class="work--sec" id="work">
+			<h2>My Work</h2>
+			<div class="work--cards--container">
+				<div class="work--cards work--card1">
+					<h3>Web Designer Portfolio<span>HTML/CSS</span></h3>
+					<div class="hov--cards">
+						<a href="#">Preview</a>
+					</div>	
+				</div>
+
+				<div class="work--cards work--card2">
+					<h3>Web Designer Portfolio<span>HTML/CSS</span></h3>
+					<div class="hov--cards">
+						<a href="#">Preview</a>
+					</div>	
+				</div>
+
+				<div class="work--cards work--card3">
+					<h3>Web Designer Portfolio<span>HTML/CSS</span></h3>	
+					<div class="hov--cards">
+						<a href="#">Preview</a>
+					</div>
+				</div>
+
+				<div class="work--cards work--card4">
+					<h3>Web Designer Portfolio<span>HTML/CSS</span></h3>
+					<div class="hov--cards">
+						<a href="#">Preview</a>
+					</div>	
+				</div>
+
+				<div class="work--cards work--card5">
+					<h3>Web Designer Portfolio<span>HTML/CSS</span></h3>
+					<div class="hov--cards">
+						<a href="#">Preview</a>
+					</div>	
+				</div>
+
+				<div class="work--cards work--card6">
+					<h3>Web Designer Portfolio<span>HTML/CSS</span></h3>
+					<div class="hov--cards">
+						<a href="#">Preview</a>
+					</div>	
+				</div>
+			</div>
+		</div>
 
 		<!-- __________________ Testimonial Section Starts Here ______________________ -->
-		<div class="testimonial--sec"></div>
+		<div class="test--sec">
+			<h2>Testimonials</h2>
+			<div class="test--container">
+				<div class="test--cards test--card1">
+					<img src="../images/myPic.png" alt="">
+					<h3>Ahmed Hassan</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat accusamus veniam itaque voluptatem architecto voluptatum eligendi doloribus. Possimus quisquam obcaecati voluptatum laudantium ad soluta voluptate, mollitia voluptates quae. Iusto, architecto?</p>
+				</div>
 
-		<!-- __________________ Subscribe Section Starts Here ______________________ -->
-		<div class="subscribe--sec" id="subscribe"></div>
+				<div class="test--cards test--card2">
+					<img src="../images/myPic.png" alt="">
+					<h3>Hammad Hassan</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Magnam eos quia sapiente, ipsum. Perferendis dolores dignissimos minus voluptate aliquam ad recusandae possimus non, minima officia porro, illum adipisci similique fugiat?</p>
+				</div>
+				
+				<div class="test--cards test--card3">
+					<img src="../images/myPic.png" alt="">
+					<h3>Nabeel Malik</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus ut earum dolor vitae obcaecati nostrum placeat aliquam ea magni perspiciatis possimus neque pariatur excepturi, sint consectetur, distinctio molestias.</p>
+				</div>
+
+				<div class="test--cards test--card4">
+					<img src="../images/myPic.png" alt="">
+					<h3>Bilal Hamza</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Iusto explicabo, hic unde saepe delectus ut voluptatem culpa ab dolor sequi beatae in. Aut dolorem laudantium, id necessitatibus, voluptate dolore. Placeat.</p>
+				</div>
+
+				<div class="test--cards test--card5">
+					<img src="../images/myPic.png" alt="">
+					<h3>Hashir Malik</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Iusto explicabo, hic unde saepe delectus ut voluptatem culpa ab dolor sequi beatae in. Aut dolorem laudantium, id necessitatibus, voluptate dolore. Placeat.</p>
+				</div>
+
+				<div class="test--cards test--card6">
+					<img src="../images/myPic.png" alt="">
+					<h3>Ali Hassan</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Iusto explicabo, hic unde saepe delectus ut voluptatem culpa ab dolor sequi beatae in. Aut dolorem laudantium, id necessitatibus, voluptate dolore. Placeat.</p>
+				</div>
+
+				<div class="test--cards test--card7">
+					<img src="../images/myPic.png" alt="">
+					<h3>Sarmad Javad</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Iusto explicabo, hic unde saepe delectus ut voluptatem culpa ab dolor sequi beatae in. Aut dolorem laudantium, id necessitatibus, voluptate dolore. Placeat.</p>
+				</div>
+
+				<div class="test--cards test--card8">
+					<img src="../images/myPic.png" alt="">
+					<h3>Ali Haider</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Iusto explicabo, hic unde saepe delectus ut voluptatem culpa ab dolor sequi beatae in. Aut dolorem laudantium, id necessitatibus, voluptate dolore. Placeat.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- __________________ Contact Section Starts Here ______________________ -->
+		<div class="contact--sec" id="contact">
+			<div class="contact--left">
+				<h2>My Contacts</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quibusdam, esse vitae ratione accusamus commodi molestias doloremque, praesentium voluptates nisi.</p>
+			</div>
+
+			<div class="contact--right">
+				<div class="right--top">
+					<h4>Email</h4>
+					<p>syedhammadshah313@gmail.com</p>
+				</div>
+
+				<div class="right--bottom">
+					<h4>Other Contacts</h4>
+					<div class="social">
+					<a href="#" ><img src="../icons/twitter.svg" alt=""></a>
+					<a href="#" ><img src="../icons/twitter.svg" alt=""></a>
+					<a href="#" ><img src="../icons/twitter.svg" alt=""></a>
+					<a href="#" ><img src="../icons/twitter.svg" alt=""></a>
+					<a href="#" ><img src="../icons/twitter.svg" alt=""></a>
+					<a href="#" ><img src="../icons/twitter.svg" alt=""></a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
 	</section>
 
 	<!-- ___________________________ Footer Section Starts Here ______________________________ -->
-	<footer></footer>
+	<footer>
+		<div class="nav">
+			<ul class="nav--list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="social--icons">
+			<a href="#"><img src="../icons/facebook.svg" alt=""></a>
+			<a href="#"><img src="../icons/twitter.svg" alt=""></a>
+			<a href="#"><img src="../icons/gmail.svg" alt=""></a>
+			<a href="#"><img src="../icons/dribbble.svg" alt=""></a>
+		</div>
+	</footer>
 </div>
 </body>
 </html>
