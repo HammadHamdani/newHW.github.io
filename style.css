@@ -402,6 +402,19 @@ header{
 	width: 100%;
 	height: 350px;
 	overflow-x: auto;
+
+}
+
+.test--container::-webkit-scrollbar{
+	width: 10px; height: 10px; }
+
+.test--container::-webkit-scrollbar-track{ 
+	border-radius: 10px; background: var(--white); }
+
+.test--container::-webkit-scrollbar-thumb{
+	width: 10px;
+	border-radius: 10px;
+	background: var(--red);
 }
 
 .test--cards{
