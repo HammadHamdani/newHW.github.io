@@ -111,6 +111,21 @@ header{
 
 .hero--h{ color: var(--red); font-size: 50px; text-transform: normal; letter-spacing: 1px; word-spacing: 8px;}
 
+.hero--p2{ position: relative; }
+
+.hero--p2::before,.hero--p2::after{
+	content: "";
+	width: 80px;
+	height: 1px;
+	background: var(--white);
+	position: absolute;
+	top: 10px; 
+}
+
+.hero--p2::before{ left: -90px; }
+
+.hero--p2::after{ right: -90px;}
+
 .hero--txt>a{
 	display: block;
 	width: 180px;
@@ -165,8 +180,8 @@ header{
 	color: rgba(0, 0, 0, 0.7);
 
 }
-/* ________________________ About Section Starts Here _________________________ */
 
+/* ________________________ About Section Starts Here _________________________ */
 .about--sec{
 	display: flex;
 	align-items: center;
