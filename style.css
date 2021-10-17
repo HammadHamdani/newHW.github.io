@@ -109,8 +109,13 @@ header{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+<<<<<<< HEAD
 	overflow: hidden;
 	height: inherit;
+=======
+	width: 500px;
+	height: max-content;
+>>>>>>> 1dbe66d905988f37d41e058762a3ba6e3b9b795f
 }
 
 .hero--p{ color: var(--white); font-family: sans-serif;}
@@ -595,4 +600,7 @@ footer{
 footer>.nav li>a{
 	color: var(--black);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1dbe66d905988f37d41e058762a3ba6e3b9b795f
