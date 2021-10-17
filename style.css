@@ -6,13 +6,20 @@
 	--yellow: #fbbd0d;				/*--secondary*/
 	--red: #fd1f4a;					/*--acscent-dark1*/
 	--white: #faf5e6;				/*--acscent-dark2*/
+
+	--h2-size: 1.7rem;
+	--h3-size: 1.1rem;
+	--p-size: 1.2rem;
 }
 
 *,::before,::after{ margin: 0; padding: 0; box-sizing: border-box;}
 
 h1,h2,h3,h4,h5,h6{ font-family: Poppins; }
 
-p{ font-size: 17px; }
+h2{ font-size: var(--h2-size); }
+
+
+p{ font-size: var(--p-size); }
 
 a{ font-family: Poppins; font-size: 14px; font-weight: 600; letter-spacing: 1px;}
 
@@ -25,7 +32,7 @@ body{
 .container{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: minmax(70vh, max-content) max-content max-content;
+	grid-template-rows: 700px max-content max-content;
 }
 
 /* ________________________ Header Section Starts Here _________________________ */
@@ -59,13 +66,12 @@ header{
 .nav--sec>a>img{ display: none; width: 20px; height: 20px; }
 
 .nav{
-	width: -webkit-fill-available;
+	width: 100%;
 	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
 
 .logo{ width: 50px; height: 50px; }
 
@@ -103,9 +109,11 @@ header{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+	height: inherit;
 }
 
-.hero--p{ color: var(--white); text-transform: uppercase; font-family: sans-serif;}
+.hero--p{ color: var(--white); font-family: sans-serif;}
 
 .hero--p1{ font-size: 20px; font-weight: 600;}
 
@@ -119,7 +127,8 @@ header{
 	height: 1px;
 	background: var(--white);
 	position: absolute;
-	top: 10px; 
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .hero--p2::before{ left: -90px; }
@@ -128,9 +137,7 @@ header{
 
 .hero--txt>a{
 	display: block;
-	width: 180px;
-	height: 40px;
-	padding: 8px 0;
+	padding: 10px 60px;
 	margin-top: 20px;
 	color: var(--white);
 	background-color: var(--red);
@@ -138,7 +145,7 @@ header{
 	text-align: center;
 	font-weight: 600;
 	border: 2px var(--red) solid;
-	border-radius: 40px;
+	border-radius: 60px;
 	transition: background 0.2s linear, color 0.25s linear;
 }
 
@@ -147,7 +154,7 @@ header{
 .hero--txt>a:active{ transform: scale(0.97); }
 
 
-.social--icons{ display: flex; align-items: center; justify-content: center; margin-top: 20px; }
+.social--icons{ display: flex; align-items: center; justify-content: center; margin-top: 25px; }
 
 .social--icons img{ width: 30px; height: 30px; margin-inline: 10px; transition: transform 0.2s ease-in;}
 
@@ -186,7 +193,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 60px 100px;
+	padding: 60px 0;
 	width: 100%;
 	height: max-content;
 }
@@ -233,7 +240,7 @@ header{
 	font-weight: 600;
 	color: var(--red);
 	border: 2px var(--red) solid;
-	border-radius: 40px;
+	border-radius: 60px;
 	align-self: flex-start;
 	margin-top: 20px;
 	transition: background 0.25s ease;
@@ -310,7 +317,6 @@ header{
 	height: 5px;
 	background: var(--black);
 	position: relative;
-	border-radius: 20px;
 	overflow: hidden;
 }
 
@@ -351,11 +357,11 @@ header{
 	align-items: center;
 	justify-content: center;
 	width: 330px;
-	height: 300px;
-	padding: 15px 20px;
+	height: max-content;
+	padding: 30px 30px;
 	border-radius: 10px;
 	margin-inline: 10px;
-	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+	/*box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);*/
 	transition: all 0.2s linear;
 }
 
@@ -367,7 +373,7 @@ header{
 
 .cards>img{ width: 70px; height: 70px; }
 
-.cards>h3{ font-size: 16px; margin: 15px 0 5px 0;}
+.cards>h3{ font-size: 1.1rem; margin: 15px 0 5px 0;}
 
 .cards>h3,p{ color: var(--black); }
 
@@ -402,7 +408,6 @@ header{
 	width: 100%;
 	height: 350px;
 	overflow-x: auto;
-
 }
 
 .test--container::-webkit-scrollbar{
@@ -480,7 +485,7 @@ header{
 }
 
 .work--cards{
-	background-image: url("../images/project1.jpg");
+	background-image: url("./images/project1.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -590,3 +595,4 @@ footer{
 footer>.nav li>a{
 	color: var(--black);
 }
+

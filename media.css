@@ -1,12 +1,41 @@
 /* ____________________ for mobile screens ____________________  */
 @media only screen and (max-width: 600px)
 {
-	.about--sec{ padding: 0 ; }
-	.img--sec{ width: 100%; height: 100%; box-shadow: unset; }
-	.about--sec h2{ font-size: 3rem; }
-	.about--sec h2:before{ font-size: 1.5rem; }
-	.about--sec p{ font-size: 2rem; word-wrap: break-word; }
-	.info{ flex-direction: column; }
+	.content--sec h2{ font-size: 2.7rem; }
+	.content--sec h2::before{ font-size: 1.15rem; }
+	p{ font-size: 2rem; word-wrap: break-word; }
+
+	/* ____________header section statrs here _________________ */
+	.nav--sec{ display: none; }
+
+	.hero--p{ font-size: 2rem; }
+
+	.hero--h{ font-size: 4.5rem; }
+
+	.hero--txt>a{ font-size: 1.8rem; padding: 20px 100px;}
+
+	.social-icons img{ width: 70px; height: 70px; }
+
+	/* ____________ about section statrs here _________________ */
+	.about--sec{ padding: 0 ; justify-content: space-between;}
+	.img--sec{ flex-basis: 40%; border: unset; height: 100%; box-shadow: unset; }
+	.about--txt{ padding: 60px 50px; margin: 0; flex-basis: 60%;}
+	.about--txt>a{ font-size: 1.8rem; padding: 20px 100px;}
+	.info{ grid-template-columns: max-content max-content; 
+		grid-template-rows: 1fr 1fr;}
+	.info>label{ font-size: 1.5rem; }
+	.col2{ margin: 0; }
+
+	/* ______________ Skills Section Starts Here ______________ */
+	.bar--fields h4{ font-size: 1.55rem; }
+	.bars{ width: 400px; height: 10px; }
+
+	/* ______________ Skills Section Starts Here ______________ */
+	.card--sec{ flex-direction: column; }
+	.cards{width: 70%; margin: 20px 0; pa}
+	.cards>h3{ font-size: 1.6rem; }
+	.cards>p{ font-size: 1.53rem; }
+
 }
 
 
