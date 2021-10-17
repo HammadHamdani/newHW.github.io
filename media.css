@@ -1,0 +1,31 @@
+/* ____________________ for mobile screens ____________________  */
+@media only screen and (max-width: 600px)
+{
+	.about--sec{ padding: 0 ; }
+	.img--sec{ width: 100%; height: 100%; box-shadow: unset; }
+	.about--sec h2{ font-size: 3rem; }
+	.about--sec h2:before{ font-size: 1.5rem; }
+	.about--sec p{ font-size: 2rem; word-wrap: break-word; }
+	.info{ flex-direction: column; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ____________________ for tablet screens ____________________  */
+@media only screen and (min-width: 601px and max-width: 768px){
+
+}
